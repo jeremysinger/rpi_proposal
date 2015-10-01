@@ -1,0 +1,47 @@
+How do we build low-cost, low-power datacenters using commodity hardware?
+What does a distributed datacenter look like?
+
+Our various UK-based research groups have investigated Raspberry Pi devices as lightweight nodes in scaled-down datacenters [1], micro-supercomputers [2] and delay-tolerant networks [3].
+The beauty of the Raspberry Pi, and similar cut-down ARM development boards, is that they can be powered by AA batteries or miniature solar panels. Further, the compute units are cheap enough to be effectively disposable.
+
+We plan to combine our resources and expertise to investigate distributed, sustainable, billion-core datacenters.
+We want to investigate use-case scenarios for building federated 'virtual' datacenters from vast arrays of distrbuted, low-power, commodity processors.
+
+> The suitability and viability of test-beds proposed for connection
+
+The Glasgow Raspberry Pi Cloud has around 100 nodes spread between Glasgow and Liverpool. It is a fully featured cloud environment, running a software stack based on Linux and Docker. It is orchestrated by Kubernetes, which is standard cloud management software deployed by Google. 
+The Southampton Iridis-Pi Cluster has around 60 nodes. It is a fully featured cluster, running a software stack based on Linux and MPI.
+The Cambridge RasPiNET is a scalable, decentralized platform, currently used for sensing applications over a delay tolerant network, based on the RFC5050 protocol.
+
+> The availability and justification for connection infrastructure
+
+We intend to vary the connectivity between the distributed micro-datacentres. We will range from data-mule style delay-tolerant networking (as currently used in Cambridge with the Iridium Satellite network) to ultra-high-speed interconnect via dedicated Janet LightPath routes, effectively creating a single logical datacenter from our disparate units. 
+This controlled variation in connectivity will be part of our experimental framework, investigating the tradeoffs involved in the various connection possibilities.
+
+> The fit to EPSRC priorities, in particular (but not exclusively) those of the ICT and 
+> Digital Economy Themes
+
+* Sustainable Society:  Each micro-datacenter will be low-cost and low-power. The power comes from the interconnected nature of the federated whole.
+* IT as a Utility: We are proposing a new paradigm for peer-to-peer, decentralized cloud computing.
+* Robotics and Autonomous Systems: 
+
+
+
+> The value added by connecting the test-beds
+
+* leverage existing hardware and expertise at four UK sites
+In our experience, the biggest challenge has been setting up software stacks on the RPi nodes. Now this is completed, we can work on compelling and innovative use-case scenarios.
+
+> The strategic vision
+
+We want to develop compelling demonstrator scenarios. Examples might be:
+- mining and recognition in disaster zones - imagine piloting drones to help rescuers locate victims of earthquakes via a decentralized network.
+- rural datacenters - each local datacenter computes info locally, makes this available to local residents, in a dashboard format. Also uploads info to central repo when possible.
+- a federation of personal micro-datacenters. Imagine using all the devices you have (smartphone, smartwatch, laptop) as a personal-area datacenter. Compute so as to conserve power in all - send appropriate jobs to appropriate places, etc. This leads onto the concept of peer-to-peer social networking. Abandon Facebook and let everyone have their own mailserver, blog and calendar. The management of this distributed infrastructure is a key research challenge.
+- content-centric networking - caches everywhere. every router becomes a cache. Smart cache in the home - programmable infrastructure needed here.
+- rural datacenter alliance. Renewable power drives small, self-sustaining micro-datacenters that federate to provide services, as opposed to the current paradigm of `big-blob' infrastructure.
+
+We note that HiPEAC / EU / ARM are engaged in building a low-power supercomputer (Mont Blanc project). Our distinct position is that low-power processors should be deployed in other large-scale systems areas than `just' traditional high-performance computing.
+
+
+
