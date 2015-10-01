@@ -45,3 +45,11 @@ We note that HiPEAC / EU / ARM are engaged in building a low-power supercomputer
 
 
 
+[1] Tso, F.P., White, D.R., Jouet, S., Singer, J., and Pezaros, D.P. (2013) The Glasgow raspberry pi cloud: a scale model for cloud computing infrastructures. In: First International Workshop on Resource Management of Cloud Computing (CCRM), Philadelphia, PA, USA, 8-11 Jul 2013, pp. 108-112. (doi:10.1109/ICDCSW.2013.25)
+
+[2] Cox, Simon, Cox, James, Boardman, Richard, Johnston, Steven J., Scott, Mark and O'Brien, Neil (2013) Iridis-pi: a low-cost, compact demonstration cluster. Cluster Computing, 1-10. (doi:10.1007/s10586-013-0282-7)
+
+[3] Yoneki, Eiki. (2014) RasPiNET: decentralised communication and sensing platform with satellite connectivity. In: Proceedings of the 9th ACM MobiCom workshop on Challenged networks (CHANTS '14). 81-84.
+(doi:10.1145/2645672.2645691) 
+
+
