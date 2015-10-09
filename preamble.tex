@@ -1,0 +1,97 @@
+%% preamble.tex
+%% Jeremy Singer
+%% 12 Dec 12
+
+% page sizing hacks
+\usepackage[left=1.8cm,top=1.8cm,right=1.8cm,bottom=1.75cm,nohead]{geometry}
+
+% packages
+\usepackage[breaklinks,colorlinks,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{url}
+%%\usepackage{bibspacing}
+\usepackage{color}
+% section font
+\usepackage[scaled]{helvet}
+\usepackage{sectsty}
+\allsectionsfont{\bfseries\sffamily}
+% for paragraph spacing 
+\usepackage[parfill]{parskip}
+% for more compact lists
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
+
+%euro symbol
+\usepackage{eurosym}
+
+% fonts
+\usepackage{paratype}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+%% serif font used for MarioNet proposal...
+%%\usepackage{DejaVuSerifCondensed}
+%%\usepackage[T1]{fontenc}
+
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05} % Palatino needs more leading (space between lines)
+%\usepackage[T1]{fontenc}
+
+
+% spacing
+% % Less space around subsections
+% \renewcommand{\subsection}{\@startsection
+%   {subsection}% name
+%   {2}% level
+%   {0mm}% indent
+%   {-0.5\baselineskip}% beforeskip
+%   {0.01\baselineskip}% afterskip
+%   {\normalsize\bfseries}}% style
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
+
+\setlength{\parskip}{0.4em}
+\linespread{0.9}
+
+% counter
+\newcounter{workpackage}
+\setcounter{workpackage}{0}
+\newcounter{deliverable}
+\setcounter{deliverable}{0}
+
+% LaTeX macro stolen from Richard Jones
+% params are 1 - workpackage title, 
+%            2 - label (for future \ref)
+%            3 - description
+%            4 - deliverable
+%            5 - risk
+
+\newcommand{\WP}[5]{%
+\vspace{0.5\baselineskip}
+\noindent\textbf{WP~\refstepcounter{workpackage}\label{#2}\theworkpackage, #1}: 
+#3 
+\underline{\emph{Deliverables}}:~#4  
+\ifx&#5&%
+  % #8 is empty
+\else
+  \noindent\underline{\emph{Risk}}:~#5\\ 
+\fi
+}
+
+\newcommand{\anycomment}[2][red]{{\textcolor{#1}{\,[\emph {#2}\,]}}}
+\newcommand{\fixme}[1]{\anycomment[red]{#1}}
+
+% comments by named author
+\newcommand{\commenttwo}[2]{\(\spadesuit\){\bf #1: }{\rm \sf #2}\(\spadesuit\)}
+% Comment this out in the draft
+%\renewcommand{\commenttwo}[2]{}
+\newcommand{\pwtcomment}[1]{\commenttwo{PWT}{#1}}
+\newcommand{\jscomment}[1]{\commenttwo{JS}{#1}}
+
+% no page numbers
+\pagestyle{empty}
+\thispagestyle{empty}
