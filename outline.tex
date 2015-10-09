@@ -19,45 +19,122 @@
 %
 % short abstract/introduction needs to go here 
 %
-\section{Project Outline}
+\section{Current Equipment}
+
+one page, equipment to be linked.
+Details of testbeds and teams. This is a track record page.
+
+The beauty of the Raspberry Pi, and similar cut-down ARM development boards, is that they can be powered by AA batteries or miniature solar panels. Further, the compute units are cheap enough to be effectively disposable.
+
+We plan to combine our resources and expertise to investigate distributed, sustainable, billion-core datacenters.
+We want to investigate use-case scenarios for building federated 'virtual' datacenters from vast arrays of distrbuted, low-power, commodity processors.
+
+
+\subsection{Cambridge: RaspiNet}
+
+delay-tolerant networks
+\cite{yoneki2014raspinet}
+
+\subsection{Glasgow: Raspberry Pi Cloud}
+
+The Glasgow Raspberry Pi Cloud has around 100 nodes spread between Glasgow and Liverpool. It is a fully featured cloud environment, running a software stack based on Linux and Docker. It is orchestrated by Kubernetes, which is standard cloud management software deployed by Google. 
+
+scaled-down datacenters
+\cite{tso2013glasgow}
+- also at Liverpool JMU?
+
+
+\subsection{Southampton: Iridis-Pi}
+
+micro-supercomputers
+\cite{cox2014iridis}
+
+%%%%%%%%%%%%%%
+
+\section{Added Value}
+
+Why do we get more from inter-connecting our separate micro-testbeds?
+Nationwide geo-distribution - what is the distance from Glasgow to Southampton? 400 miles?
+
+We intend to vary the connectivity between the distributed micro-datacentres. We will range from data-mule style delay-tolerant networking (as currently used in Cambridge with the Iridium Satellite network) to ultra-high-speed interconnect via dedicated Janet LightPath routes, effectively creating a single logical datacenter from our disparate units. 
+This controlled variation in connectivity will be part of our experimental framework, investigating the tradeoffs involved in the various connection possibilities.
+
+leverage existing hardware and expertise at four UK sites
+In our experience, the biggest challenge has been setting up software stacks on the RPi nodes. Now this is completed, we can work on compelling and innovative use-case scenarios.
 
 
 
-\section{Work Packages/Methodology}
 
 
-\section{Pathways to Impact}
+\section{Strategic Case}
 
+Importance of ARM in datacenter.
 
+We want to develop compelling demonstrator scenarios. Examples might be:
+- mining and recognition in disaster zones - imagine piloting drones to help rescuers locate victims of earthquakes via a decentralized network.
+- rural datacenters - each local datacenter computes info locally, makes this available to local residents, in a dashboard format. Also uploads info to central repo when possible.
+- a federation of personal micro-datacenters. Imagine using all the devices you have (smartphone, smartwatch, laptop) as a personal-area datacenter. Compute so as to conserve power in all - send appropriate jobs to appropriate places, etc. This leads onto the concept of peer-to-peer social networking. Abandon Facebook and let everyone have their own mailserver, blog and calendar. The management of this distributed infrastructure is a key research challenge.
+- content-centric networking - caches everywhere. every router becomes a cache. Smart cache in the home - programmable infrastructure needed here.
+- rural datacenter alliance. Renewable power drives small, self-sustaining micro-datacenters that federate to provide services, as opposed to the current paradigm of `big-blob' infrastructure.
 
-\section{Investigator Profiles}
-
-\noindent{\bf Dr.\ Jeremy Singer}
-\textit{(PI, Glasgow)} has 
-expertise in mathematical models for resource allocation
-within virtual runtime environments. He also works on
-static and dynamic techniques for
-software performance optimization on multi/many-core systems.
-He is PI for one current EPSRC project (EP/L000725/1).
+We note that HiPEAC / EU / ARM are engaged in building a low-power supercomputer (Mont Blanc project). Our distinct position is that low-power processors should be deployed in other large-scale systems areas than `just' traditional high-performance computing.
 
 
 
-\section{Resource Requirements}
+\section{Consortium Development}
 
-\textbf{The total RC budget is \pounds 1.176m over 48 months} (FEC \pounds 1.470m) as shown below.
+Initial stages---
+
+1. harness our network
+
+2. 
+work within existing academic pools e.g.\ SICSA (Scottish universities) next-generation internet community, complex systems community (weblinks).
+N8 - northern universities research partnership (Does Posco have links here?)
+Science and Engineering South \url{http://www.ses.ac.uk} - Southampton and Cambridge are partners. This consortium already has equipment sharing agreements.
+
+Then - expand.
+3. with a community workshop, a public website, a timesharing facility.
+
+4. volunteer involvement. Invite general public (public engagement and impact!) to contribute their Raspberry Pi resources to a distributed datacenter facility, then federate with us. Software packages and instructions will be readily available. Need some incentives here? Not sure what...
+
+
+
+\section{National Importance}
+
+ARM in the datacenter.
+
+Distributed datacenters - avoid `data drain' of all our personal and corporate info ending up in US datacenters... cf.\ Cambridge data box idea. (Anil et al).
+
+\section{Pathway to Impact / Sustainability}
+
+Academic dissemination via publications, community workshop.
+
+Public engagement via blog (existing at \url{http://raspberrypicloud.wordpress.com} - need to upgrade?).
+
+
+\section{Resources and Management}
+
+Aim for \pounds 1m max.
+Say a four year project. Would this fund 1 grade 6 RA per site?
+
+Technical support?
+
+Also need money for equipment... although not too much since we should say we have most of it already!
+
+
+
+
+\textbf{The total RC budget is \pounds 1.00m over 48 months} (FEC \pounds 1.250m) as shown below.
 \\
 \textbf{Staff:} 
 \\
-\textbf{Total Staff: \pounds 1,116k} (FEC \pounds 1,395k)\vspace{1mm}
+%\textbf{Total Staff: \pounds 1,116k} (FEC \pounds 1,395k)\vspace{1mm}
 \\
 \textbf{Travel:}
 We request support for semi-annual all-hands project meetings,
-occasional cross-site integration work,
-attendance at UK/EU conferences and
-workshops,
-and attendance at international
-conferences and workshops.
-Per site: \pounds 12k
+cross-site researcher mobility,
+attendance at 2x international conference per site per year.
+Also money to host our own workshops.
 \\
 \textbf{Total Travel: \pounds 36k} (FEC \pounds 45k)\vspace{1mm}
 \\
@@ -72,10 +149,10 @@ Per site: \pounds 12k
 %% leave related work as references
 %% inlined in other sections
 
-%{\small
-%%%%\bibliographystyle{abbrv}
-%%%%\bibliography{outline}
-%}
+{\small
+\bibliographystyle{abbrv}
+\bibliography{outline}
+}
 
 \end{document}
 
